@@ -1,0 +1,396 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Uniciclo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Zero.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:32 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Zero.sv 
+# -- Compiling module Zero
+# 
+# Top level modules:
+# 	Zero
+# End time: 18:42:32 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Xor_.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:32 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Xor_.sv 
+# -- Compiling module Xor_
+# 
+# Top level modules:
+# 	Xor_
+# End time: 18:42:32 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Substraction.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:32 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Substraction.sv 
+# -- Compiling module Substraction
+# 
+# Top level modules:
+# 	Substraction
+# End time: 18:42:32 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Shift_right_arithmetic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:32 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Shift_right_arithmetic.sv 
+# -- Compiling module Shift_right_arithmetic
+# 
+# Top level modules:
+# 	Shift_right_arithmetic
+# End time: 18:42:32 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Shift_right.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:32 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Shift_right.sv 
+# -- Compiling module Shift_right
+# 
+# Top level modules:
+# 	Shift_right
+# End time: 18:42:32 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Shift_left.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Shift_left.sv 
+# -- Compiling module Shift_left
+# 
+# Top level modules:
+# 	Shift_left
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Overflow_flag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Overflow_flag.sv 
+# -- Compiling module Overflow_flag
+# 
+# Top level modules:
+# 	Overflow_flag
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Or_.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Or_.sv 
+# -- Compiling module Or_
+# 
+# Top level modules:
+# 	Or_
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Negative.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Negative.sv 
+# -- Compiling module Negative
+# 
+# Top level modules:
+# 	Negative
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv 
+# -- Compiling module Mux16
+# 
+# Top level modules:
+# 	Mux16
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Carry_flag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Carry_flag.sv 
+# -- Compiling module Carry_flag
+# 
+# Top level modules:
+# 	Carry_flag
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/And_.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/And_.sv 
+# -- Compiling module And_
+# 
+# Top level modules:
+# 	And_
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Alu.sv 
+# -- Compiling module Alu
+# 
+# Top level modules:
+# 	Alu
+# End time: 18:42:33 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/Addition.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:33 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/Addition.sv 
+# -- Compiling module Addition
+# 
+# Top level modules:
+# 	Addition
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv 
+# -- Compiling module condlogic
+# 
+# Top level modules:
+# 	condlogic
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv 
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condcheck
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:34 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 18:42:34 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:35 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 18:42:35 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 18:42:57 on Nov 06,2019
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.Alu
+# Loading work.Addition
+# Loading work.Substraction
+# Loading work.And_
+# Loading work.Or_
+# Loading work.Xor_
+# Loading work.Shift_right
+# Loading work.Shift_right_arithmetic
+# Loading work.Shift_left
+# Loading work.Mux16
+# Loading work.Zero
+# Loading work.Negative
+# Loading work.Carry_flag
+# Loading work.Overflow_flag
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/top.sv(6): [PCDPC] - Port size (32) does not match connection size (1) for port 'PC'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/arm.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/top.sv(6): [PCDPC] - Port size (1) does not match connection size (32) for port 'MemWrite'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/arm.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/arm.sv(14): [PCDPC] - Port size (32) does not match connection size (4) for port 'Instr'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/arm.sv(14): [PCDPC] - Port size (4) does not match connection size (32) for port 'ALUFlags'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv
+# ** Warning: (vsim-3017) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [TFMPC] - Too few port connections. Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [PCDPC] - Port size (3) does not match connection size (32) for port 'a'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [PCDPC] - Port size (3) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [PCDPC] - Port size (4) does not match connection size (2) for port 'AluControl'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [PCDPC] - Port size (7) does not match connection size (32) for port 'AluResult'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [PCDPC] - Port size (1) does not match connection size (4) for port 'z'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv
+# ** Warning: (vsim-3722) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [TFMPC] - Missing connection for port 'n'.
+# ** Warning: (vsim-3722) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [TFMPC] - Missing connection for port 'c'.
+# ** Warning: (vsim-3722) C:/Users/Usuario7b/Desktop/Procesador/datapath.sv(28): [TFMPC] - Missing connection for port 'v'.
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd9'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd10'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd11'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd12'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd13'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd14'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(36): [PCDPC] - Port size (3) does not match connection size (32) for port 'd15'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv
+# ** Warning: (vsim-3015) C:/Users/Usuario7b/Desktop/Procesador/Alu.sv(42): [PCDPC] - Port size (3) does not match connection size (1) for port 'cout'. The port definition is at: C:/Users/Usuario7b/Desktop/Procesador/Carry_flag.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/carry_flag File: C:/Users/Usuario7b/Desktop/Procesador/Carry_flag.sv
+# ** Warning: (vsim-3839) C:/Users/Usuario7b/Desktop/Procesador/top.sv(9): Variable '/testbench/dut/ReadData', driven via a port connection, is multiply driven. See C:/Users/Usuario7b/Desktop/Procesador/top.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/dmem File: C:/Users/Usuario7b/Desktop/Procesador/dmem.sv
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "memfile.dat" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/Usuario7b/Desktop/Procesador/imem.sv(5)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem
+# Break key hit
+# Simulation stop requested.
+# End time: 18:43:53 on Nov 06,2019, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 23

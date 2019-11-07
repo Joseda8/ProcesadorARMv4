@@ -1,0 +1,772 @@
+Analysis & Elaboration report for Uniciclo
+Wed Nov 06 18:41:38 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+  5. Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+  6. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:pcmux
+  7. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|flopr:pcreg
+  8. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd1
+  9. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd2
+ 10. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra1mux
+ 11. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra2mux
+ 12. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:resmux
+ 13. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:srcbmux
+ 14. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu
+ 15. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Addition:addition
+ 16. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Substraction:substraction
+ 17. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|And_:and_
+ 18. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Or_:or_
+ 19. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Xor_:xor_
+ 20. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Shift_right:shift_right
+ 21. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Shift_right_arithmetic:shift_right_arithmetic
+ 22. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Shift_left:shift_left
+ 23. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Mux16:mux16
+ 24. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Zero:zero
+ 25. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Negative:negative
+ 26. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Carry_flag:carry_flag
+ 27. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Overflow_flag:overflow_flag
+ 28. Analysis & Elaboration Settings
+ 29. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu|Carry_flag:carry_flag"
+ 30. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu|Mux16:mux16"
+ 31. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu|Substraction:substraction"
+ 32. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu"
+ 33. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|mux2:srcbmux"
+ 34. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|regfile:rf"
+ 35. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|mux2:ra1mux"
+ 36. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd2"
+ 37. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd1"
+ 38. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp"
+ 39. Port Connectivity Checks: "top:dut|arm:arm"
+ 40. Port Connectivity Checks: "top:dut"
+ 41. Analysis & Elaboration Messages
+ 42. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Nov 06 18:41:38 2019       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; Uniciclo                                    ;
+; Top-level Entity Name         ; testbench                                   ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd2 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Addition:addition ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Substraction:substraction ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|And_:and_ ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Or_:or_ ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Xor_:xor_ ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Shift_right:shift_right ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Shift_right_arithmetic:shift_right_arithmetic ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Shift_left:shift_left ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Mux16:mux16 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Zero:zero ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Negative:negative ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Carry_flag:carry_flag ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|Alu:alu|Overflow_flag:overflow_flag ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; N              ; 3     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; testbench          ; Uniciclo           ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu|Carry_flag:carry_flag"                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; cout ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "cout[2..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu|Mux16:mux16"                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d9        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d9[2..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d10       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d10[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d11       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d11[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d12       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d12[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d13       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d13[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d14       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d14[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d15       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d15[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu|Substraction:substraction"                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|Alu:alu"                                                                                                                                                     ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                                                                            ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; a          ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b          ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; AluControl ; Input  ; Warning  ; Input port expression (2 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "AluControl[3..2]" will be connected to GND.                                 ;
+; AluResult  ; Output ; Warning  ; Output or bidir port (7 bits) is smaller than the port expression (32 bits) it drives.  The 25 most-significant bit(s) in the port expression will be connected to GND.            ;
+; z          ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND.              ;
+; n          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; c          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; v          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|mux2:srcbmux"                                               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; y[31..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|regfile:rf"                                                   ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; rd1[31..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                              ;
++------+-------+----------+-------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd2" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                           ;
++----------+-------+----------+----------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                           ;
++----------+-------+----------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp"                                                                                                                                                      ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                 ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Instr          ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "Instr[31..4]" will be connected to GND.                         ;
+; ALUFlags       ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (32 bits) it drives.  The 28 most-significant bit(s) in the port expression will be connected to GND. ;
+; ALUFlags[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
+; WriteData      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm"                                                                                                                                                                ;
++--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                                 ;
++--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; PC           ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "PC[31..1]" have no fanouts                                                 ;
+; MemWrite     ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND. ;
+; MemWrite[-1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
++--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut"                                                                                 ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; clk       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; WriteData ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; DataAdr   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemWrite  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Nov 06 18:41:18 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Uniciclo -c Uniciclo --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file zero.sv
+    Info (12023): Found entity 1: Zero File: C:/Users/Usuario7b/Desktop/Procesador/Zero.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xor_.sv
+    Info (12023): Found entity 1: Xor_ File: C:/Users/Usuario7b/Desktop/Procesador/Xor_.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test_mux16.sv
+    Info (12023): Found entity 1: test_mux16 File: C:/Users/Usuario7b/Desktop/Procesador/test_mux16.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench_alu.sv
+    Info (12023): Found entity 1: TestBench_ALU File: C:/Users/Usuario7b/Desktop/Procesador/TestBench_ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file substraction.sv
+    Info (12023): Found entity 1: Substraction File: C:/Users/Usuario7b/Desktop/Procesador/Substraction.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right_arithmetic.sv
+    Info (12023): Found entity 1: Shift_right_arithmetic File: C:/Users/Usuario7b/Desktop/Procesador/Shift_right_arithmetic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right.sv
+    Info (12023): Found entity 1: Shift_right File: C:/Users/Usuario7b/Desktop/Procesador/Shift_right.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left.sv
+    Info (12023): Found entity 1: Shift_left File: C:/Users/Usuario7b/Desktop/Procesador/Shift_left.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_circular_right.sv
+    Info (12023): Found entity 1: shift_circular_right File: C:/Users/Usuario7b/Desktop/Procesador/shift_circular_right.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sevenseg.sv
+    Info (12023): Found entity 1: sevenseg File: C:/Users/Usuario7b/Desktop/Procesador/sevenseg.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file overflow_flag.sv
+    Info (12023): Found entity 1: Overflow_flag File: C:/Users/Usuario7b/Desktop/Procesador/Overflow_flag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_.sv
+    Info (12023): Found entity 1: Or_ File: C:/Users/Usuario7b/Desktop/Procesador/Or_.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file negative.sv
+    Info (12023): Found entity 1: Negative File: C:/Users/Usuario7b/Desktop/Procesador/Negative.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux8.sv
+    Info (12023): Found entity 1: Mux8 File: C:/Users/Usuario7b/Desktop/Procesador/Mux8.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux16.sv
+    Info (12023): Found entity 1: Mux16 File: C:/Users/Usuario7b/Desktop/Procesador/Mux16.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file carry_flag.sv
+    Info (12023): Found entity 1: Carry_flag File: C:/Users/Usuario7b/Desktop/Procesador/Carry_flag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file auto_test_alu.sv
+    Info (12023): Found entity 1: auto_test_ALU File: C:/Users/Usuario7b/Desktop/Procesador/auto_test_ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_.sv
+    Info (12023): Found entity 1: And_ File: C:/Users/Usuario7b/Desktop/Procesador/And_.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: Alu File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file addition.sv
+    Info (12023): Found entity 1: Addition File: C:/Users/Usuario7b/Desktop/Procesador/Addition.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
+    Info (12023): Found entity 1: arm File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
+    Info (12023): Found entity 1: controller File: C:/Users/Usuario7b/Desktop/Procesador/controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/Usuario7b/Desktop/Procesador/decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condlogic.sv
+    Info (12023): Found entity 1: condlogic File: C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condcheck.sv
+    Info (12023): Found entity 1: condcheck File: C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/Usuario7b/Desktop/Procesador/regfile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/Usuario7b/Desktop/Procesador/adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
+    Info (12023): Found entity 1: extend File: C:/Users/Usuario7b/Desktop/Procesador/extend.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
+    Info (12023): Found entity 1: flopr File: C:/Users/Usuario7b/Desktop/Procesador/flopr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr File: C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
+    Info (12023): Found entity 1: mux2 File: C:/Users/Usuario7b/Desktop/Procesador/mux2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/Users/Usuario7b/Desktop/Procesador/testbench.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
+    Info (12023): Found entity 1: dmem File: C:/Users/Usuario7b/Desktop/Procesador/dmem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
+    Info (12023): Found entity 1: imem File: C:/Users/Usuario7b/Desktop/Procesador/imem.sv Line: 1
+Info (12127): Elaborating entity "testbench" for the top level hierarchy
+Warning (10175): Verilog HDL warning at testbench.sv(30): ignoring unsupported system task File: C:/Users/Usuario7b/Desktop/Procesador/testbench.sv Line: 30
+Warning (10175): Verilog HDL warning at testbench.sv(33): ignoring unsupported system task File: C:/Users/Usuario7b/Desktop/Procesador/testbench.sv Line: 33
+Info (12128): Elaborating entity "top" for hierarchy "top:dut" File: C:/Users/Usuario7b/Desktop/Procesador/testbench.sv Line: 9
+Info (12128): Elaborating entity "arm" for hierarchy "top:dut|arm:arm" File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 7
+Info (12128): Elaborating entity "controller" for hierarchy "top:dut|arm:arm|controller:c" File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 12
+Info (12128): Elaborating entity "decoder" for hierarchy "top:dut|arm:arm|controller:c|decoder:dec" File: C:/Users/Usuario7b/Desktop/Procesador/controller.sv Line: 9
+Info (12128): Elaborating entity "condlogic" for hierarchy "top:dut|arm:arm|controller:c|condlogic:cl" File: C:/Users/Usuario7b/Desktop/Procesador/controller.sv Line: 11
+Info (12128): Elaborating entity "flopenr" for hierarchy "top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv Line: 9
+Info (12128): Elaborating entity "condcheck" for hierarchy "top:dut|arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv Line: 14
+Info (12128): Elaborating entity "datapath" for hierarchy "top:dut|arm:arm|datapath:dp" File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 19
+Info (12128): Elaborating entity "mux2" for hierarchy "top:dut|arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 12
+Info (12128): Elaborating entity "flopr" for hierarchy "top:dut|arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 13
+Info (12128): Elaborating entity "adder" for hierarchy "top:dut|arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 14
+Info (12128): Elaborating entity "mux2" for hierarchy "top:dut|arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 18
+Info (12128): Elaborating entity "regfile" for hierarchy "top:dut|arm:arm|datapath:dp|regfile:rf" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 22
+Info (12128): Elaborating entity "extend" for hierarchy "top:dut|arm:arm|datapath:dp|extend:ext" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 24
+Info (12128): Elaborating entity "Alu" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu" File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 28
+Info (12128): Elaborating entity "Addition" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Addition:addition" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 20
+Info (12128): Elaborating entity "Substraction" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Substraction:substraction" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 22
+Info (12128): Elaborating entity "And_" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|And_:and_" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 24
+Info (12128): Elaborating entity "Or_" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Or_:or_" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 26
+Info (12128): Elaborating entity "Xor_" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Xor_:xor_" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 28
+Info (12128): Elaborating entity "Shift_right" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Shift_right:shift_right" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 30
+Info (12128): Elaborating entity "Shift_right_arithmetic" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Shift_right_arithmetic:shift_right_arithmetic" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 32
+Info (12128): Elaborating entity "Shift_left" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Shift_left:shift_left" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 34
+Info (12128): Elaborating entity "Mux16" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Mux16:mux16" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 36
+Info (12128): Elaborating entity "Zero" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Zero:zero" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 38
+Info (12128): Elaborating entity "Negative" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Negative:negative" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 40
+Info (12128): Elaborating entity "Carry_flag" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Carry_flag:carry_flag" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at Carry_flag.sv(6): truncated value with size 3 to match size of target (1) File: C:/Users/Usuario7b/Desktop/Procesador/Carry_flag.sv Line: 6
+Info (12128): Elaborating entity "Overflow_flag" for hierarchy "top:dut|arm:arm|datapath:dp|Alu:alu|Overflow_flag:overflow_flag" File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 44
+Info (12128): Elaborating entity "imem" for hierarchy "top:dut|imem:imem" File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 8
+Warning (10850): Verilog HDL warning at imem.sv(5): number of words (1) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/Usuario7b/Desktop/Procesador/imem.sv Line: 5
+Warning (10030): Net "RAM.data_a" at imem.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario7b/Desktop/Procesador/imem.sv Line: 3
+Warning (10030): Net "RAM.waddr_a" at imem.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario7b/Desktop/Procesador/imem.sv Line: 3
+Warning (10030): Net "RAM.we_a" at imem.sv(3) has no driver or initial value, using a default initial value '0' File: C:/Users/Usuario7b/Desktop/Procesador/imem.sv Line: 3
+Info (12128): Elaborating entity "dmem" for hierarchy "top:dut|dmem:dmem" File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 9
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[31]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[30]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[29]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[28]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[27]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[26]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[25]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[24]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[23]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[22]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[21]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[20]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[19]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[18]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[17]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[16]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[15]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[14]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[13]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[12]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[11]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[10]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[9]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[8]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|ALUResult[7]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/datapath.sv Line: 4
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "top:dut|arm:arm|ALUFlags[3]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|ALUFlags[2]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|ALUFlags[1]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 4
+    Warning (12110): Net "top:dut|arm:arm|ALUFlags[0]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/arm.sv Line: 4
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "top:dut|PC[31]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[30]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[29]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[28]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[27]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[26]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[25]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[24]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[23]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[22]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[21]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[20]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[19]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[18]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[17]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[16]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[15]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[14]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[13]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[12]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[11]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[10]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[9]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[8]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[7]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[6]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[5]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[4]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[3]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[2]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[1]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+    Warning (12110): Net "top:dut|PC[0]" is missing source, defaulting to GND File: C:/Users/Usuario7b/Desktop/Procesador/top.sv Line: 3
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/Users/Usuario7b/Desktop/Procesador/output_files/Uniciclo.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 73 warnings
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Wed Nov 06 18:41:38 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:39
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/Usuario7b/Desktop/Procesador/output_files/Uniciclo.map.smsg.
+
+

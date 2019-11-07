@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at TestBench_ALU.sv(3): object "N" differs only in case from object "n" in the same scope File: C:/Users/Usuario7b/Desktop/Procesador/TestBench_ALU.sv Line: 3
+Info (10281): Verilog HDL Declaration information at auto_test_ALU.sv(3): object "N" differs only in case from object "n" in the same scope File: C:/Users/Usuario7b/Desktop/Procesador/auto_test_ALU.sv Line: 3
+Info (10281): Verilog HDL Declaration information at Alu.sv(1): object "N" differs only in case from object "n" in the same scope File: C:/Users/Usuario7b/Desktop/Procesador/Alu.sv Line: 1
+Warning (10273): Verilog HDL warning at decoder.sv(22): extended using "x" or "z" File: C:/Users/Usuario7b/Desktop/Procesador/decoder.sv Line: 22
+Warning (10273): Verilog HDL warning at decoder.sv(35): extended using "x" or "z" File: C:/Users/Usuario7b/Desktop/Procesador/decoder.sv Line: 35
+Warning (10273): Verilog HDL warning at extend.sv(11): extended using "x" or "z" File: C:/Users/Usuario7b/Desktop/Procesador/extend.sv Line: 11
