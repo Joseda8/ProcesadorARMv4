@@ -1,0 +1,12 @@
+module deco_mem(input logic [31:0] in, output logic dmen_enable, mouse_mem_enable, sprite_mem_enable);
+always_comb
+	case(in)
+		[32'h0:32'h3f]: begin 
+			dmen_enable = 1'b1;
+			mouse_mem_enable = 1'b0;
+			sprite_mem_enable = 1'b0;
+			end
+		4'b0001: out = 7'b1111001;
+		default: out = 7'b0000000;
+	endcase
+endmodule

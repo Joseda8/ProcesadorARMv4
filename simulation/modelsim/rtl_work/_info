@@ -1,0 +1,437 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario7b/Desktop/Procesador/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1573611678
+!i10b 1
+!s100 :C7Q;W@<Q^EjeaVcQ<KZg2
+IgIcCeGlg1Q4=5HgK^JRck2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+R0
+w1573494301
+8C:/Users/Usuario7b/Desktop/Procesador/adder.sv
+FC:/Users/Usuario7b/Desktop/Procesador/adder.sv
+L0 11
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1573611677.000000
+!s107 C:/Users/Usuario7b/Desktop/Procesador/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/adder.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador
+Z8 tCvgOpt 0
+vALU
+R1
+Z9 !s110 1573611677
+!i10b 1
+!s100 :>CCBEg[<a3bb_6adC3];3
+IPLUg4aA_ARf<;bV3>19_e3
+R3
+!s105 ALU_sv_unit
+S1
+R0
+w1573488237
+8C:/Users/Usuario7b/Desktop/Procesador/ALU.sv
+FC:/Users/Usuario7b/Desktop/Procesador/ALU.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Usuario7b/Desktop/Procesador/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/ALU.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+varm
+R1
+R9
+!i10b 1
+!s100 56FCXhBR>oVU<5li[Wo2n3
+I0;IJF^Ga=;@]M:kdO4AdT2
+R3
+!s105 arm_sv_unit
+S1
+R0
+w1573541559
+8C:/Users/Usuario7b/Desktop/Procesador/arm.sv
+FC:/Users/Usuario7b/Desktop/Procesador/arm.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Usuario7b/Desktop/Procesador/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/arm.sv|
+!i113 1
+R6
+R7
+R8
+vcondcheck
+R1
+Z10 !s110 1573611676
+!i10b 1
+!s100 C8N>n^@FKVeKY8]17FQP93
+I[`ZghC:Q@6<LC2@=dnS2n2
+R3
+!s105 condcheck_sv_unit
+S1
+R0
+w1573491836
+8C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv
+FC:/Users/Usuario7b/Desktop/Procesador/condcheck.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1573611676.000000
+!s107 C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv|
+!i113 1
+R6
+R7
+R8
+vcondlogic
+R1
+R10
+!i10b 1
+!s100 P[URhJjHQa;b`CiW[Ba]A0
+I1YiM3W[S_l2gNX3?BHO9V3
+R3
+!s105 condlogic_sv_unit
+S1
+R0
+w1573491855
+8C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv
+FC:/Users/Usuario7b/Desktop/Procesador/condlogic.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv|
+!i113 1
+R6
+R7
+R8
+vcontroller
+R1
+R10
+!i10b 1
+!s100 oQFB9i3O?A99<dENidMD91
+IR5MmN1SGc]:JGfcHPKTaJ3
+R3
+!s105 controller_sv_unit
+S1
+R0
+w1573488873
+8C:/Users/Usuario7b/Desktop/Procesador/controller.sv
+FC:/Users/Usuario7b/Desktop/Procesador/controller.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario7b/Desktop/Procesador/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/controller.sv|
+!i113 1
+R6
+R7
+R8
+vdatapath
+R1
+R10
+!i10b 1
+!s100 GT?R5YibA6MlUzTdmN7g53
+I4^n^h>nVE<1Ez?emb_hL:0
+R3
+!s105 datapath_sv_unit
+S1
+R0
+w1573541648
+8C:/Users/Usuario7b/Desktop/Procesador/datapath.sv
+FC:/Users/Usuario7b/Desktop/Procesador/datapath.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario7b/Desktop/Procesador/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/datapath.sv|
+!i113 1
+R6
+R7
+R8
+vdecoder
+R1
+Z12 !s110 1573611675
+!i10b 1
+!s100 3<>=eOS=[O4O`D4T=IZ4T1
+I=@E?VDAEET2cAz8=g`GHc0
+R3
+!s105 decoder_sv_unit
+S1
+R0
+w1573489574
+8C:/Users/Usuario7b/Desktop/Procesador/decoder.sv
+FC:/Users/Usuario7b/Desktop/Procesador/decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z13 !s108 1573611675.000000
+!s107 C:/Users/Usuario7b/Desktop/Procesador/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/decoder.sv|
+!i113 1
+R6
+R7
+R8
+vdmem
+R1
+R12
+!i10b 1
+!s100 JT:6eK69OzY92Z4;OgHSj2
+IBL[V4^PDh9ecFDH8E<NVN0
+R3
+!s105 dmem_sv_unit
+S1
+R0
+w1573523082
+8C:/Users/Usuario7b/Desktop/Procesador/dmem.sv
+FC:/Users/Usuario7b/Desktop/Procesador/dmem.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario7b/Desktop/Procesador/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/dmem.sv|
+!i113 1
+R6
+R7
+R8
+vextend
+R1
+R12
+!i10b 1
+!s100 d0iS07hJJQSlhiAnoKQg;1
+IIFY]bj@VoTMajW79G<7Pf3
+R3
+!s105 extend_sv_unit
+S1
+R0
+w1573499955
+8C:/Users/Usuario7b/Desktop/Procesador/extend.sv
+FC:/Users/Usuario7b/Desktop/Procesador/extend.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario7b/Desktop/Procesador/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/extend.sv|
+!i113 1
+R6
+R7
+R8
+vflopenr
+R1
+R12
+!i10b 1
+!s100 AgVHjB^`=EODf;?kBPgP=2
+IIFnEC<RPXE^ojPDFjl>Xk3
+R3
+!s105 flopenr_sv_unit
+S1
+R0
+w1573492056
+8C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv
+FC:/Users/Usuario7b/Desktop/Procesador/flopenr.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv|
+!i113 1
+R6
+R7
+R8
+vflopr
+R1
+Z14 !s110 1573611674
+!i10b 1
+!s100 NRP59hF6UhK3=YbQmoSib1
+IQJR5o;B>cScCnW8@MhF3g3
+R3
+!s105 flopr_sv_unit
+S1
+R0
+w1573494012
+8C:/Users/Usuario7b/Desktop/Procesador/flopr.sv
+FC:/Users/Usuario7b/Desktop/Procesador/flopr.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z15 !s108 1573611674.000000
+!s107 C:/Users/Usuario7b/Desktop/Procesador/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/flopr.sv|
+!i113 1
+R6
+R7
+R8
+vimemtb
+R1
+R2
+!i10b 1
+!s100 `CRCDAZVcDdEoeSM93[[E1
+Ii@AZ?oajF=:<LQCN;?LTQ1
+R3
+!s105 imemtb_sv_unit
+S1
+R0
+w1573611525
+8C:/Users/Usuario7b/Desktop/Procesador/imemtb.sv
+FC:/Users/Usuario7b/Desktop/Procesador/imemtb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1573611678.000000
+!s107 C:/Users/Usuario7b/Desktop/Procesador/imemtb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/imemtb.sv|
+!i113 1
+R6
+R7
+R8
+vmux2_1
+R1
+R14
+!i10b 1
+!s100 6z05G6c^W9XL:ZMblcKgT0
+IeA?DJmN<`9?eJgGRM2d=;1
+R3
+!s105 mux2_1_sv_unit
+S1
+R0
+w1568052046
+8C:/Users/Usuario7b/Desktop/Procesador/mux2_1.sv
+FC:/Users/Usuario7b/Desktop/Procesador/mux2_1.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Usuario7b/Desktop/Procesador/mux2_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/mux2_1.sv|
+!i113 1
+R6
+R7
+R8
+vregfile
+R1
+R14
+!i10b 1
+!s100 f3lai>GI1f4d9aMQikY`J2
+IGjGTB5HMcaP<bh93M=aXe3
+R3
+!s105 regfile_sv_unit
+S1
+R0
+w1573494651
+8C:/Users/Usuario7b/Desktop/Procesador/regfile.sv
+FC:/Users/Usuario7b/Desktop/Procesador/regfile.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/Usuario7b/Desktop/Procesador/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/regfile.sv|
+!i113 1
+R6
+R7
+R8
+vtestbenchCPU
+R1
+R14
+!i10b 1
+!s100 hWc:9<B6W<dd]>B5@USB^3
+I59l?EUX@B`3@^9nEOLe;@1
+R3
+!s105 testbenchCPU_sv_unit
+S1
+R0
+w1573611602
+8C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv
+FC:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv
+L0 3
+R4
+r1
+!s85 0
+31
+Z16 !s108 1573611673.000000
+!s107 C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv|
+!i113 1
+R6
+R7
+R8
+ntestbench@c@p@u
+vtop
+R1
+!s110 1573611673
+!i10b 1
+!s100 z1T^@eX@gaaQ9I2?j=hIF1
+IeY__;@AlU^aSej?63<`F_3
+R3
+!s105 top_sv_unit
+S1
+R0
+w1573545361
+8C:/Users/Usuario7b/Desktop/Procesador/top.sv
+FC:/Users/Usuario7b/Desktop/Procesador/top.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/Usuario7b/Desktop/Procesador/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Usuario7b/Desktop/Procesador|C:/Users/Usuario7b/Desktop/Procesador/top.sv|
+!i113 1
+R6
+R7
+R8

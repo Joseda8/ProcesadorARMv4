@@ -1,0 +1,242 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Procesador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:13 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 20:21:13 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:13 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv 
+# -- Compiling module testbenchCPU
+# 
+# Top level modules:
+# 	testbenchCPU
+# End time: 20:21:14 on Nov 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:14 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 20:21:14 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/mux2_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:14 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/mux2_1.sv 
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# End time: 20:21:14 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:14 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 20:21:15 on Nov 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:15 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 20:21:15 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:15 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 20:21:15 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:15 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 20:21:15 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:15 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 20:21:15 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:16 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 20:21:16 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:16 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 20:21:16 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:16 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/condlogic.sv 
+# -- Compiling module condlogic
+# 
+# Top level modules:
+# 	condlogic
+# End time: 20:21:16 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:16 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/condcheck.sv 
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condcheck
+# End time: 20:21:17 on Nov 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:17 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 20:21:17 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:17 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 20:21:17 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:17 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 20:21:18 on Nov 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Usuario7b/Desktop/Procesador {C:/Users/Usuario7b/Desktop/Procesador/imemtb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:18 on Nov 12,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Usuario7b/Desktop/Procesador" C:/Users/Usuario7b/Desktop/Procesador/imemtb.sv 
+# -- Compiling module imemtb
+# 
+# Top level modules:
+# 	imemtb
+# End time: 20:21:18 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.testbenchCPU
+# vsim work.testbenchCPU 
+# Start time: 20:21:52 on Nov 12,2019
+# Loading sv_std.std
+# Loading work.testbenchCPU
+# Loading work.top
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2_1
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.ALU
+# Loading work.imemtb
+# Loading work.dmem
+vsim work.testbenchCPU
+# End time: 20:21:57 on Nov 12,2019, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# vsim work.testbenchCPU 
+# Start time: 20:21:57 on Nov 12,2019
+# Loading sv_std.std
+# Loading work.testbenchCPU
+# Loading work.top
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2_1
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.ALU
+# Loading work.imemtb
+# Loading work.dmem
+add wave -position end  sim:/testbenchCPU/clk
+add wave -position end  sim:/testbenchCPU/reset
+add wave -position end  sim:/testbenchCPU/WriteData
+add wave -position end  sim:/testbenchCPU/DataAdr
+add wave -position end  sim:/testbenchCPU/Instr
+add wave -position end  sim:/testbenchCPU/PC
+add wave -position end  sim:/testbenchCPU/PCNext
+add wave -position end  sim:/testbenchCPU/MemWrite
+run -all
+# Simulation succeeded
+# ** Note: $stop    : C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv(31)
+#    Time: 195 ps  Iteration: 1  Instance: /testbenchCPU
+# Break in Module testbenchCPU at C:/Users/Usuario7b/Desktop/Procesador/testbenchCPU.sv line 31
+# End time: 20:24:08 on Nov 12,2019, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 0

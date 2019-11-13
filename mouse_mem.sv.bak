@@ -1,0 +1,12 @@
+module mouse_mem (input logic clock, clic, we, wd,
+						output logic rd);
+						
+logic RAM;
+
+assign rd = RAM; // word aligned
+
+always_ff @(posedge clk)
+if (we) RAM <= wd;
+
+endmodule
+
